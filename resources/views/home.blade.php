@@ -246,35 +246,8 @@
           </li>
         </ul>
       </nav>
-      <div class="main-sidebar sidebar-style-2">
-        <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
-            <a href="index.html">Ikhfhm</a>
-          </div>
-          <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">St</a>
-          </div>
-          <ul class="sidebar-menu">
-            <li class="menu-header">Dashboard</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="index-0.html">General Dashboard</a></li>
-                <li><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
-              </ul>
-            </li>
-            <li class="menu-header">Starter</li>
-            <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="layout-default.html">Default Layout</a></li>
-                <li><a class="nav-link" href="layout-transparent.html">Transparent Sidebar</a></li>
-                <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
-              </ul>
-            </li>
-            <li class=active><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
-        </aside>
-      </div>
+      
+      @include('template_backend.sidebar')
 
       <!-- Main Content -->
       <div class="main-content">
@@ -287,32 +260,8 @@
           </div>
         </section>
       </div>
-      <footer class="main-footer">
-        <div class="footer-left">
-          Copyright &copy; 2012 <div class="bullet"></div> Design by <a href="https://linktr.ee/ikhfhm">Ikhwan Fahmi</a>
-        </div>
-        <div class="footer-right">
-          
-        </div>
-      </footer>
-    </div>
-  </div>
 
-  <!-- General JS Scripts -->
-  <script src="assets/modules/jquery.min.js"></script>
-  <script src="assets/modules/popper.js"></script>
-  <script src="assets/modules/tooltip.js"></script>
-  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
-  <script src="assets/modules/moment.min.js"></script>
-  <script src="assets/js/stisla.js"></script>
-  
-  <!-- JS Libraies -->
+      @include('template_backend.footer')
 
-  <!-- Page Specific JS File -->
-  
-  <!-- Template JS File -->
-  <script src="assets/js/scripts.js"></script>
-  <script src="assets/js/custom.js"></script>
 </body>
 </html>
