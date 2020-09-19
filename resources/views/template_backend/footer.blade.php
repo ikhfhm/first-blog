@@ -1,6 +1,6 @@
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2012 <div class="bullet"></div> Design by <a href="https://linktr.ee/ikhfhm">Ikhwan Fahmi</a>
+          Copyright &copy; 2020 <div class="bullet"></div> Design by <a href="https://linktr.ee/ikhfhm">Ikhwan Fahmi</a>
         </div>
         <div class="footer-right">
           
