@@ -1,6 +1,6 @@
 @extends('template_backend.home')
+@section('sub-judul','Kategori')
 @section('content')
-<h1>INI ADALAH CATEGORY</h1>
 
 	<table class="table table-striped table-hover table-sm table-bordered">
 		<thead>
