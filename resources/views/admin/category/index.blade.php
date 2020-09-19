@@ -23,8 +23,13 @@
 			<tr>
 				<td>{{$result + $category->firstitem()}}</td>
 				<td>{{$hasil->name}}</td>
-				<td><a href="{{route('category.edit', $hasil->id)}}" class="btn btn-warning btn-sm">Edit</a>
-					<a href="" class="btn btn-danger btn-sm">Delete</a>
+				<td>
+					<form action="{{route('category.destroy', $hasil->id)}}" method="post">
+						@csrf
+						@method('delete')
+					<a href="{{route('category.edit', $hasil->id)}}" class="btn btn-warning btn-sm">Edit</a>
+					<button type="submit" class="btn btn-danger btn-sm">Delete</button>
+					</form>
 				</td>
 			</tr>
 			@endforeach
