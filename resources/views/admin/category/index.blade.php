@@ -9,10 +9,10 @@
 			<th>Aksi</th>
 		</thead>
 		<tbody>
-			@foreach($category as $result)
+			@foreach($category as $result => $hasil)
 			<tr>
-				<td></td>
-				<td>{{$result->name}}</td>
+				<td>{{$result + $category->firstitem()}}</td>
+				<td>{{$hasil->name}}</td>
 				<td><a href="" class="btn btn-warning btn-sm">Edit</a>
 					<a href="" class="btn btn-danger btn-sm">Delete</a>
 				</td>
