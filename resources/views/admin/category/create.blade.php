@@ -2,6 +2,16 @@
 @section('sub-judul','Tambah Kategori')
 @section('content')
 
+@if(count($errors)>0)
+  @foreach($errors->all() as $error)
+    <div class="alert alert-danger" role="alert">
+      {{$error}}
+    </div>
+  @endforeach
+@endif
+
+
+
 <form action="{{route('category.store')}}" method="post">
   @csrf
   <div class="form-group">

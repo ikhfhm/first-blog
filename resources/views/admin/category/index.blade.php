@@ -1,11 +1,18 @@
 @extends('template_backend.home')
 @section('sub-judul','Kategori')
 @section('content')
+
+@if(Session::has('success'))
+	<div class="alert alert-success" role="alert">
+      {{Session('success')}}
+    </div>
+@endif
+<br>
 	
-	<a href="{{route('category.create')}}" class="btn btn-info btn-sm">Tambah Kategori</a>
+	<a href="{{route('category.create')}}" class="btn btn-primary btn-sm">Tambah Kategori</a>
 	<br><br>
 
-	<table class="table table-striped table-hover table-sm table-bordered">
+	<table class="table table-hover table-sm table-bordered">
 		<thead>
 			<th>No</th>
 			<th>Nama Kategori</th>
