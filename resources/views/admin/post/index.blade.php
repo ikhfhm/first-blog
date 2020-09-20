@@ -17,6 +17,7 @@
 			<th>No</th>
 			<th>Nama Post</th>
 			<th>Kategori</th>
+			<th>Tag</th>
 			<th>Thumbnail</th>
 			<th>Aksi</th>
 		</thead>
@@ -26,6 +27,10 @@
 				<td>{{$result + $post->firstitem()}}</td>
 				<td>{{$hasil->judul}}</td>
 				<td>{{$hasil->category->name}}</td>
+				<td>@foreach($hasil->tags as $tag)
+					{{$tag->name}} | 
+					@endforeach
+				</td>
 				<td><img src="{{asset($hasil->thumbnail)}}" class="img-fluid" style="width:100px"></td>
 				<td>
 					<form action="{{route('post.destroy', $hasil->id)}}" method="post">
