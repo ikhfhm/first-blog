@@ -99,7 +99,44 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'judul' => 'required',
+            'category_id' => 'required',
+            'content' => 'required',
+        ]);
+
+
+
+        $post = Posts::findorfail($id);
+
+        if($request->has('thumbnail')) {
+            $thumbnail = $request->thumbnail;
+            $new_thumbnail = time().$thumbnail->getClientOriginalName();
+            $thumbnail->move('public/uploads/posts/', $new_thumbnail);
+
+        $post_data = [
+            'judul' => $request->judul,
+            'category_id' => $request->category_id,
+            'content' => $request->content,
+            'thumbnail' => 'public/uploads/posts/'.$new_thumbnail,
+            'slug' => Str::slug($request->judul)
+        ];
+
+        }
+        else{
+        $post_data = [
+            'judul' => $request->judul,
+            'category_id' => $request->category_id,
+            'content' => $request->content,
+            'slug' => Str::slug($request->judul)
+        ];
+        }
+
+
+        $post->tags()->sync($request->tags);
+        $post->update($post_data);
+
+        return redirect('post')->with('success', 'Postingan berhasil diupdate');
     }
 
     /**

@@ -10,8 +10,9 @@
   @endforeach
 @endif
 
-<form action="{{route('post.store')}}" method="post" enctype="multipart/form-data">
+<form action="{{route('post.update', $post->id)}}" method="post" enctype="multipart/form-data">
   @csrf
+  @method('patch')
   <div class="form-group">
     <label>Judul</label>
     <input type="text" class="form-control" name="judul" value="{{$post->judul}}">
@@ -52,7 +53,7 @@
     <input type="file" class="form-control" name="thumbnail">
   </div>
   <div class="form-group">
-    <button class="btn btn-primary">Simpan Post</button>
+    <button class="btn btn-primary">Update Post</button>
   </div>
 </form>
 
