@@ -84,7 +84,10 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::all();
+        $tags = Tags::all();
+        $post = Posts::findorfail($id);
+        return view('admin.post.edit', compact('post', 'tags', 'category'));
     }
 
     /**
