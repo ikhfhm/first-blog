@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Posts;
+use App\Category;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -25,7 +26,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        $category = Category::all();
+        return view('admin.post.create', compact('category'));
     }
 
     /**
@@ -36,7 +38,25 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'judul' => 'required',
+            'category_id' => 'required',
+            'content' => 'required',
+            'thumbnail' => 'required'
+        ]);
+
+        $thumbnail = $request->thumbnail;
+        $new_thumbnail = time().$thumbnail->getClientOriginalName();
+
+        $post = Posts::create([
+            'judul' => $request->judul,
+            'category_id' => $request->category_id,
+            'content' => $request->content,
+            'thumbnail' => 'public/uploads/posts/'.$new_thumbnail
+        ]);
+
+        $thumbnail->move('public/uploads/posts/', $new_thumbnail);
+        return redirect('post')->with('success', 'Post berhasil ditambahkan');
     }
 
     /**
