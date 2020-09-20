@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Posts;
 use App\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PostController extends Controller
 {
@@ -52,7 +53,8 @@ class PostController extends Controller
             'judul' => $request->judul,
             'category_id' => $request->category_id,
             'content' => $request->content,
-            'thumbnail' => 'public/uploads/posts/'.$new_thumbnail
+            'thumbnail' => 'public/uploads/posts/'.$new_thumbnail,
+            'slug' => Str::slug($request->judul)
         ]);
 
         $thumbnail->move('public/uploads/posts/', $new_thumbnail);
