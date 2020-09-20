@@ -15,7 +15,7 @@
 	<table class="table table-hover table-sm table-bordered">
 		<thead>
 			<th>No</th>
-			<th>Nama Post</th>
+			<th>Judul</th>
 			<th>Kategori</th>
 			<th>Tag</th>
 			<th>Thumbnail</th>

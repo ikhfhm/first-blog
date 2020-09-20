@@ -9,7 +9,7 @@
           <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i><span>Dashboard</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="index-0.html">General Dashboard</a></li>
                 <li><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
@@ -17,19 +17,19 @@
             </li>
             <li class="menu-header">Starter</li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Post</span></a>
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book-open"></i> <span>Post</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{route('post.index')}}">List Post</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Kategori</span></a>
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-clipboard"></i> <span>Kategori</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{route('category.index')}}">List Kategori</a></li>
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Tag</span></a>
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-tag"></i> <span>Tag</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="{{route('tag.index')}}">List Tag</a></li>
               </ul>
