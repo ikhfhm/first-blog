@@ -16,6 +16,7 @@
 		<thead>
 			<th>No</th>
 			<th>Nama Post</th>
+			<th>Kategori</th>
 			<th>Aksi</th>
 		</thead>
 		<tbody>
@@ -23,6 +24,7 @@
 			<tr>
 				<td>{{$result + $post->firstitem()}}</td>
 				<td>{{$hasil->judul}}</td>
+				<td>{{$hasil->category->name}}</td>
 				<td>
 					<form action="{{route('post.destroy', $hasil->id)}}" method="post">
 						@csrf
