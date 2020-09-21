@@ -165,4 +165,11 @@ class PostController extends Controller
         return redirect('/post/hapus')->with('success', 'Postingan berhasil direstore');
     }
 
+    public function kill($id) {
+        $post = Posts::withTrashed()->where('id', $id)->first();
+        $post->forceDelete();
+
+        return redirect('/post/hapus')->with('success', 'Postingan berhasil dihapus permanen');
+    }
+
 }
