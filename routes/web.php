@@ -21,4 +21,6 @@ Route::get('/home', function () {
 
 Route::resource('/category', 'CategoryController');
 Route::resource('/tag', 'TagController');
+Route::get('/post/hapus', 'PostController@tampil_hapus')->name('post.tampil_hapus');
+Route::get('/post/resore/{id}', 'PostController@restore')->name('post.restore');
 Route::resource('/post', 'PostController');

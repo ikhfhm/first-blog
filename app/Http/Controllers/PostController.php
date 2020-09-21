@@ -152,4 +152,17 @@ class PostController extends Controller
 
         return redirect('post')->with('success', 'Postingan berhasil dihapus');
     }
+
+    public function tampil_hapus() {
+        $post = Posts::onlyTrashed()->paginate(10);
+        return view('admin.post.hapus', compact('post'));
+    }
+
+    public function restore($id) {
+        $post = Posts::withTrashed()->where('id', $id)->first();
+        $post->restore();
+
+        return redirect('/post/hapus')->with('success', 'Postingan berhasil direstore');
+    }
+
 }
