@@ -18,7 +18,7 @@ class CreatePostsTable extends Migration
             $table->string('judul');
             $table->integer('category_id');
             $table->text('content');
-            $table->string('gambar');
+            $table->string('thumbnail');
             $table->timestamps();
         });
     }

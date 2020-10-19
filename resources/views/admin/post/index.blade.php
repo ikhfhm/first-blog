@@ -8,7 +8,7 @@
     </div>
 @endif
 <br>
-	
+
 	<a href="{{route('post.create')}}" class="btn btn-primary btn-sm">Tambah Post</a>
 	<br><br>
 
@@ -18,6 +18,7 @@
 			<th>Judul</th>
 			<th>Kategori</th>
 			<th>Tag</th>
+			<th>Creator</th>
 			<th>Thumbnail</th>
 			<th>Aksi</th>
 		</thead>
@@ -28,9 +29,10 @@
 				<td>{{$hasil->judul}}</td>
 				<td>{{$hasil->category->name}}</td>
 				<td>@foreach($hasil->tags as $tag)
-					{{$tag->name}} | 
+					{{$tag->name}} |
 					@endforeach
 				</td>
+				<td>{{ $hasil->users->name }}</td>
 				<td><img src="{{asset($hasil->thumbnail)}}" class="img-fluid" style="width:100px"></td>
 				<td>
 					<form action="{{route('post.destroy', $hasil->id)}}" method="post">
