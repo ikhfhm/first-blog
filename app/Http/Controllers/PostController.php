@@ -64,7 +64,7 @@ class PostController extends Controller
         $post->tags()->attach($request->tags);
 
         $thumbnail->move('public/uploads/posts/', $new_thumbnail);
-        return redirect('post')->with('success', 'Postingan berhasil ditambahkan');
+        return redirect('post')->with('success', 'Postingan berhasil disimpan');
     }
 
     /**

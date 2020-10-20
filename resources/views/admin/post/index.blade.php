@@ -29,7 +29,7 @@
 				<td>{{$hasil->judul}}</td>
 				<td>{{$hasil->category->name}}</td>
 				<td>@foreach($hasil->tags as $tag)
-					{{$tag->name}} |
+                        <h6><span class="badge badge-info">{{$tag->name}}</span></h6>
 					@endforeach
 				</td>
 				<td>{{ $hasil->users->name }}</td>

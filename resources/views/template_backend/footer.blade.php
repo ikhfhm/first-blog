@@ -1,9 +1,9 @@
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2020 <div class="bullet"></div> Design by <a href="https://linktr.ee/ikhfhm">Ikhwan Fahmi</a>
+          Copyright &copy; 2020 <div class="bullet"></div> Created by <a href="https://linktr.ee/ikhfhm">Ikhwan Fahmi</a>
         </div>
         <div class="footer-right">
-          
+
         </div>
       </footer>
     </div>
@@ -18,11 +18,11 @@
   <script src="{{asset('assets/modules/moment.min.js')}}"></script>
   <script src="{{asset('assets/js/stisla.js')}}"></script>
   <script src="{{asset('assets/modules/select2/dist/js/select2.full.min.js')}}"></script>
-  
+
   <!-- JS Libraies -->
 
   <!-- Page Specific JS File -->
-  
+
   <!-- Template JS File -->
   <script src="{{asset('assets/js/scripts.js')}}"></script>
   <script src="{{asset('assets/js/custom.js')}}"></script>

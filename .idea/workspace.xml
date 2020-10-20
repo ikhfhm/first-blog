@@ -3,20 +3,42 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aeecce20-7c40-45f5-a426-cefc00b3dca6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_20_014557_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_20_014557_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_04_102442_tambah_field_user_post.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/uploads/posts/1603095162Screenshot_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/uploads/posts/1603099019Screenshot_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/public/uploads/posts/1603100281Screenshot_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/post/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template_backend/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template_backend/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template_backend/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template_backend/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template_backend/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template_backend/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -122,11 +144,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1iWaghAuJGX4pzKQ6susrECaT2k" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -151,11 +177,26 @@
       <workItem from="1602025920477" duration="303000" />
       <workItem from="1602459522638" duration="75000" />
       <workItem from="1603076051996" duration="9364000" />
+      <workItem from="1603094727930" duration="4723000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1602459589384">
@@ -182,9 +223,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="368" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1603088038326" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1603091465194">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1603113387054">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1603091465194" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1603113387054" />
   </component>
 </project>

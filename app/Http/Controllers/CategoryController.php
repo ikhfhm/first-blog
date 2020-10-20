@@ -45,7 +45,7 @@ class CategoryController extends Controller
             'name' => $request->name,
             'slug' => Str::slug($request->name)
         ]);
-        return redirect('category')->with('success', 'Kategori berhasil ditambahkan');
+        return redirect('category')->with('success', 'Kategori berhasil disimpan');
     }
 
     /**

@@ -46,7 +46,7 @@ class TagController extends Controller
             'slug' => Str::slug($request->name)
         ]);
 
-        return redirect('tag')->with('success', 'Tag berhasil ditambahkan');
+        return redirect('tag')->with('success', 'Tag berhasil disimpan');
     }
 
     /**
